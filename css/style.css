@@ -40,21 +40,6 @@ a {
   font-family: "Manrope", sans-serif;
 }
 
-/* body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-} */
-
-/* font-family: 'Fraunces', serif;
-font-family: 'Manrope', sans-serif; */
-
 header {
   background-image: url(/img/big-circles.svg), url(/img/small-circles.svg);
   background-repeat: no-repeat, no-repeat;
@@ -95,7 +80,7 @@ header {
 
 .middle_text {
   /* border: 2px solid yellow; */
-  width: 40vw;
+  width: 50vw;
   margin: 0 auto;
   text-align: center;
   margin-top: 55px;
@@ -327,8 +312,83 @@ footer {
   margin: 4rem;
 }
 
-
-
-.footer_social a{
+.footer_social a {
   padding: 0 1.5rem;
+}
+
+@media (max-width: 1350px) {
+  header {
+    background-position: -20% 32%, 110% 83%;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    background-position: -32% 32%, 110% 83%;
+    /* color: red; */
+  }
+
+  .hero-img {
+    top: 93%;
+    left: 15%;
+    width: 650px;
+  }
+
+  main {
+    display: flex;
+    height: 200vh;
+  }
+
+  .features {
+    display: block;
+
+    padding-top: 25rem;
+    padding-bottom: 3rem;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0rem;
+    margin: 2rem auto;
+    width: 70%;
+    /* border: 2px solid yellow; */
+  }
+
+  .feature_number {
+    width: 100px;
+    height: 56px;
+    border: 1px solid #24053e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-right: 3rem;
+  }
+
+  .feature_text {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: #24053e;
+  }
+
+  .custom-shape-divider-main {
+    position: absolute;
+    top: 300vh;
+    /* bottom: 50%; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .founder-message {
+    width: 730px;
+    height: 490px;
+  }
+
+  .founder-circles {
+    top: 79%;
+
+  }
 }
